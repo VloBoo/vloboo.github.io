@@ -1,7 +1,8 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 
 <head>
-    <title>Формы в HTML</title>
+    <title>Мен</title>
 
     <meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -9,28 +10,32 @@
         body {
             background-color: #1d2021;
             color: beige;
-            font-size: 35px;
+            font-size: 30px;
             font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial sans-serif;
         }
 
+
+
         div.contain {
-            width: 1000px;
-            background-color: #202324;
-            margin: 3em auto;
-            padding: 1em;
-            box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.294);
-            border-radius: 0.5em;
+            width: 400px;
+            margin: 1em auto;
         }
 
-        input {
+        td {
+            padding: 10px 10px;
+            font-size: 30px;
+        }
+
+        button {
             background-color: beige;
             color: #1d2021;
             border-radius: 10px;
-            padding: 3px 10px;
+            padding: 3px auto;
             text-align: center;
+            min-width: 400px;
             text-decoration: none;
             display: inline-block;
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 800;
             margin: 2px 1px;
             cursor: pointer;
@@ -40,12 +45,12 @@
 
 <body>
     <div class="contain">
-        <p align="center">Ваши данные успешно отправлены в КГБ на проверку.
-            <br>
-            Спасибо!
-            <br><br>
-            <input type="button" onclick="history.back();" value="Назад" />
-        </p>
+        <h1 align="center">Меню</h1>
+        <a href="bel1.html" target="content"><button>Исторические периоды</button></a>
+        <br>
+        <a href="bel2.html" target="content"><button>События 20 века</button></a>
+        <br>
+        <a href="bel3.html" target="content"><button>Официальные праздничные дни</button></a>
     </div>
 </body>
 

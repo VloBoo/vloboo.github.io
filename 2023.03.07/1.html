@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <title>Анкета</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body {
+            background-color: #1d2021;
+            color: beige;
+            font-size: 30px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial sans-serif;
+        }
+
+        td.left {
+            vertical-align: top;
+            text-align: right;
+            padding: 0px 10px;
+        }
+
+        div.contain {
+            width: 1200px;
+            background-color: #202324;
+            margin: 3em auto;
+            padding: 2em;
+            box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.294);
+            border-radius: 0.5em;
+        }
+
+        td {
+            padding: 10px 10px;
+            font-size: 30px;
+        }
+
+        button {
+            background-color: beige;
+            color: #1d2021;
+            border-radius: 10px;
+            padding: 3px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 800;
+            margin: 2px 1px;
+            cursor: pointer;
+        }
+
+        input {
+            background-color: beige;
+            color: #1d2021;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 2px 1px;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked {
+            color: #1d2021;
+            background-color: #1d2021;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <marquee truespeed="true" scrollamount="5" scrolldelay="1">
+            <h1 align="center">Анкета</h1>
+        </marquee>
+        <hr size="5" noshade="" color="beige">
+
+        <form name="form" method="get" action="ok.html" enctype="text/plain">
+            <fieldset>
+                <legend>ФИО</legend>
+                <table>
+                    <tr>
+                        <td>
+                            Имя:
+                        </td>
+                        <td>
+                            <input type="text" name="firstname" maxlength="30" size="80" placeholder="Ваше имя"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Фамилия:
+                        </td>
+                        <td>
+                            <input type="text" name="secondname" maxlength="30" size="80" placeholder="Ваше фамилия"
+                                required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>
+                    Дата рождения
+                </legend>
+                Число:
+                <input type="number" min="1" max="31" name="day" placeholder="число" required>
+                Месяц:
+                <input type="month" name="month" placeholder="месяц" required>
+                Год:
+                <input type="number" min="1900" max="2023" name="year" placeholder="год" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>
+                    Пол
+                </legend>
+                Муж
+                <input type="radio" name="gender" value="male" required>
+                Жен
+                <input type="radio" name="gender" value="female" required>
+            </fieldset>
+            <br>
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </form>
+    </div>
+</body>
+
+</html>
