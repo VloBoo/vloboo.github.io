@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Формы в HTML</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body {
+            background-color: #1d2021;
+            color: beige;
+            font-size: 30px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <form name="form1" method="get" action="ok.html" enctype="text/plain">
+            Ваше имя: <input type="text" name="firstname" value="Ваше имя">
+            <br>
+            Ваш пароль: <input type="password" name="pass">
+            <br>
+            Выберите вариант
+            <select name="choice">
+                <option value="1">Вариант 1</option>
+                <option value="2">Вариант 2</option>
+                <option value="3">Вариант 3</option>
+            </select>
+            <br>
+            Напишите что-нибудь
+            <br>
+            <textarea name="message" rows="10" cols="15">Сообщение</textarea>
+            <br>
+            Сделайте сложный выбор:
+            <br>
+            <input type="radio" name="choiceradio" value="1"> Вариант 1
+            <br>
+            <input type="radio" name="choiceradio" value="2"> Вариант 2
+            <br>
+            <input type="radio" name="choiceradio" value="3"> Вариант 3
+            <br>
+            Вы согласны с нашими правилами:
+            <input type="checkbox" name="terms" value="yes">
+            <br>
+            <input type="file" name="path">
+            <br>
+            <input type="button" name="start" value="Начать">
+            <br>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+</body>
+
+</html>

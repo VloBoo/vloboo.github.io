@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>Формы в HTML</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body {
+            background-color: #1d2021;
+            color: beige;
+            font-size: 30px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial sans-serif;
+        }
+
+        td.left {
+            vertical-align: top;
+            text-align: right;
+            padding: 0px 10px;
+        }
+        div{
+            width: 600px;
+            background-color: #202324;
+            margin: 3em auto;
+            padding: 2em;
+            box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.294);
+            border-radius: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Моя форма</h1>
+        <form name="form" method="get" action="ok.html" enctype="text/plain">
+            <table>
+                <tr>
+                    <td class="left">
+                        Имя
+                    </td>
+                    <td>
+                        <input type="text" name="login" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        Почтa
+                    </td>
+                    <td>
+                        <input type="text" name="email" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        Пароль
+                    </td>
+                    <td>
+                        <input type="password" name="password" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        Повторите пароль
+                    </td>
+                    <td>
+                        <input type="password" name="password2" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        Пол
+                    </td>
+                    <td>
+                        <input type="radio" name="gender"> мужской
+                        <input type="radio" name="gender"> женский
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        Увлечение
+                    </td>
+                    <td>
+                        <select name="hobby">
+                            <option>компьютер</option>
+                            <option>спорт</option>
+                            <option>игры</option>
+                            <option>животные</option>
+                            <option>вебдизаин</option>
+                            <option>сон</option>
+                            <option>учеба</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        Ваши пожелания
+                    </td>
+                    <td>
+                        <textarea name="comment" rows="5" cols="44"> </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">
+                        С условием ознакомлен
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </form>
+    </div>
+</body>
+
+</html>

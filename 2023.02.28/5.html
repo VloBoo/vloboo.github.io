@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Формы в HTML</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body {
+            background-color: #1d2021;
+            color: beige;
+            font-size: 30px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial sans-serif;
+        }
+
+
+        div {
+            width: 800px;
+            background-color: #202324;
+            margin: 3em auto;
+            padding: 2em;
+            box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.294);
+            border-radius: 0.5em;
+        }
+        .s{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <marquee>
+            <h1>Тест по теме Форма HTML</h1>
+        </marquee>
+        <form name="form" method="get" action="ok.html" enctype="text/plain">
+            <table>
+                <tr>
+                    <td class="s">
+                        Имя
+                    </td>
+                    <td>
+                        <input type="text" name="login" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="s">
+                        Дата прохождения   
+                    </td>
+                    <td>
+                        <input type="date" name="date" size="50">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            Для чего предназначены формы?
+            <br>
+            <textarea rows="5" cols="70" name="q1"></textarea>
+            <br>
+            Каким тегом определяются формы?
+            <br>
+            <textarea rows="5" cols="70" name="q2"></textarea>
+            <br>
+            Напишите формат контейнера &lt;FORM&gt;
+            <br>
+            <textarea rows="5" cols="70" name="q3"></textarea>
+            <br>
+            Какие атрибуты имеет тег &lt;FORM&gt;?
+            <br>
+            <textarea rows="5" cols="70" name="q4"></textarea>
+            <br>
+            Для чего предназначен атрибут Action?
+            <br>
+            <textarea rows="5" cols="70" name="q5"></textarea>
+            <br>
+            Для чего предназначен атрибут Method?
+            <br>
+            <textarea rows="5" cols="70" name="q6"></textarea>
+
+
+            <br>
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </form>
+    </div>
+</body>
+
+</html>
